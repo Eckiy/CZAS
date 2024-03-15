@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.75499, y: -62.1}
-  m_SizeDelta: {x: 65.0308, y: 30}
+  m_AnchoredPosition: {x: 19.6, y: -48.2}
+  m_SizeDelta: {x: 65.0308, y: 27.0436}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73660723
 MonoBehaviour:
@@ -275,7 +275,6 @@ RectTransform:
   m_Children:
   - {fileID: 1304923927}
   - {fileID: 815711064}
-  - {fileID: 206484414}
   m_Father: {fileID: 1926100029}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -395,7 +394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &206484414
 RectTransform:
   m_ObjectHideFlags: 0
@@ -419,12 +418,12 @@ RectTransform:
   - {fileID: 1950342921}
   - {fileID: 1186817403}
   - {fileID: 2001818468}
-  m_Father: {fileID: 79745286}
+  m_Father: {fileID: 815711064}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.0449982, y: 2.4000015}
-  m_SizeDelta: {x: -59.7193, y: 0.000022888184}
+  m_AnchoredPosition: {x: -96.39998, y: -7}
+  m_SizeDelta: {x: 137.1702, y: 82.56314}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &206484415
 MonoBehaviour:
@@ -879,6 +878,7 @@ RectTransform:
   m_Children:
   - {fileID: 2122568572}
   - {fileID: 73660722}
+  - {fileID: 206484414}
   m_Father: {fileID: 79745286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1003,6 +1003,7 @@ GameObject:
   - component: {fileID: 1132062398}
   - component: {fileID: 1132062397}
   - component: {fileID: 1132062399}
+  - component: {fileID: 1132062400}
   m_Layer: 0
   m_Name: biurko
   m_TagString: Untagged
@@ -1122,6 +1123,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.13, y: 2.71}
   m_EdgeRadius: 0
+--- !u!114 &1132062400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132062396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e84c23754c5ffb4cb7008216bc163bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BiurkoPanel: {fileID: 79745285}
 --- !u!1 &1186817402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,7 +1416,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304923926}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1412,7 +1426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.1, y: -2.6}
+  m_AnchoredPosition: {x: -5.100006, y: -2.5999908}
   m_SizeDelta: {x: 136.9401, y: 88.5367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1304923928
@@ -1458,7 +1472,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1304923929}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 206484413}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1304923929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2673,7 +2699,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2001818470}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 206484413}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2001818470
 MonoBehaviour:
   m_ObjectHideFlags: 0
