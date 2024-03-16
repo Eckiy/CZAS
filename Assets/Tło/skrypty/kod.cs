@@ -25,6 +25,13 @@ public class kod : MonoBehaviour
     {
         button1.onClick.AddListener(b1pressed);
         button2.onClick.AddListener(b2pressed);
+        button3.onClick.AddListener(b3pressed);
+        button4.onClick.AddListener(b4pressed);
+        button5.onClick.AddListener(b5pressed);
+        button6.onClick.AddListener(b6pressed);
+        button7.onClick.AddListener(b7pressed);
+        button8.onClick.AddListener(b8pressed);
+        button9.onClick.AddListener(b9pressed);
     }
 
     private void b1pressed() {
