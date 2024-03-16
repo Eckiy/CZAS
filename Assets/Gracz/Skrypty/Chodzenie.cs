@@ -6,6 +6,9 @@ public class Chodzenie : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody2D gracz;
+    [SerializeField] private Animator animator;
+
+
     Vector2 tuptanie;
 
 
@@ -15,6 +18,9 @@ public class Chodzenie : MonoBehaviour
         tuptanie.x = Input.GetAxisRaw("Horizontal");
         tuptanie.y = Input.GetAxisRaw("Vertical");
 
+        animator.SetFloat("Horizontal", tuptanie.x);
+        animator.SetFloat("Vertical", tuptanie.y);
+        animator.SetFloat("Speed", tuptanie.sqrMagnitude);
     }
 
     void FixedUpdate()

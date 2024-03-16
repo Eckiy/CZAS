@@ -9,7 +9,7 @@ public class Środkowyenter : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            SceneManager.LoadScene(0, LoadSceneMode.Single);
+            SceneManager.LoadScene(1, LoadSceneMode.Single);
         }
     }
 }
