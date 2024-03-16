@@ -88,6 +88,7 @@ public class kod : MonoBehaviour
         if (code == "3425") { 
             // dŸwiêk otwierania drzwi 
             codeEvent.Invoke();
+            code = "Correct!";
         } else if (code.Length >= 4 )
         {
             // z³y kod dŸwiêk
