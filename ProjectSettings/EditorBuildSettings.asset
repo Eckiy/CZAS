@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: "Assets/Scenes/G\u0142\xF3wny ekran.unity"
+    guid: 12cfd992dfec1cf49850cd6b6873e8b9
+  - enabled: 1
     path: "Assets/Scenes/\u015Brodkowy pok\xF3j.unity"
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -14,7 +17,4 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/2 pok\xF3j.unity"
     guid: 72a4c365522b3d0418d2947fb51b36ac
-  - enabled: 1
-    path: "Assets/Scenes/3 pok\xF3j.unity"
-    guid: ad85601061c26834e91059b947a6a4e1
   m_configObjects: {}

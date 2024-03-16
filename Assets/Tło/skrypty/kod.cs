@@ -5,21 +5,23 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class codeEvent : UnityEvent <bool> {};
 
 public class kod : MonoBehaviour
 {
-    public UnityEvent codeEvent;
+    public UnityEvent codeEvent; 
     private string code;
-    Button button1;
-    Button button2;
-    Button button3;
-    Button button4;
-    Button button5;
-    Button button6;
-    Button button7;
-    Button button8;
-    Button button9;
+    [SerializeField] private TextMeshProUGUI tekst;
+    [SerializeField] private Button button1;
+    [SerializeField] private Button button2;
+    [SerializeField] private Button button3;
+    [SerializeField] private Button button4;
+    [SerializeField] private Button button5;
+    [SerializeField] private Button button6;
+    [SerializeField] private Button button7;
+    [SerializeField] private Button button8;
+    [SerializeField] private Button button9;
 
     private void Start()
     {
@@ -79,15 +81,17 @@ public class kod : MonoBehaviour
 
 
 
-
-
-
-
-
     void Update()
     {
+        tekst.text = code;
+
         if (code == "3425") { 
+            // dŸwiêk otwierania drzwi 
             codeEvent.Invoke();
+        } else if (code.Length >= 4 )
+        {
+            // z³y kod dŸwiêk
+            code = "";
         }
     }
    
